@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "all-types-of-navigation",
-    "slug": "all-types-of-navigation",
+    "slug": "all-navigations",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -23,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fe7920a7-43b3-426a-b0e8-65fa62083c48"
+      }
+    },
+    "owner": "prakharsaxena5125"
   }
 }
