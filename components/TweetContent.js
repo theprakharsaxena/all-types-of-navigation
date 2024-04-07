@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, View, useColorScheme } from "react-native";
 import { EvilIcons } from "@expo/vector-icons";
 
-const tweetActions = (retweets, comments, likes) => {
+const TweetActions = (retweets, comments, likes) => {
   const theme = useColorScheme();
   return (
     <View style={[styles.rowActions, styles.actionBar]}>
@@ -87,7 +87,7 @@ export default TweetContent = ({ tweet }) => {
             {tweet.fullText}
           </Text>
           <View style={styles.rowActions}>
-            {tweetActions(
+            {TweetActions(
               tweet.retweetCount,
               tweet.replyCount,
               tweet.favoriteCount
